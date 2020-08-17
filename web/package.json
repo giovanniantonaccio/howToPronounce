@@ -3,14 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "@types/jest": "^24.0.0",
+    "@types/lodash": "^4.14.159",
     "@types/node": "^12.0.0",
     "@types/react": "^16.9.0",
     "@types/react-dom": "^16.9.0",
     "axios": "^0.19.2",
+    "lodash": "^4.17.20",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.2",
@@ -22,9 +26,6 @@
     "test": "react-app-rewired test --env=jsdom",
     "eject": "react-scripts eject",
     "lint": "node_modules/eslint/bin/eslint.js . --ext .js,.jsx,.ts,.tsx"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
   },
   "browserslist": {
     "production": [
@@ -54,5 +55,6 @@
     "eslint-plugin-react-hooks": "^4",
     "prettier": "^2.0.5",
     "react-app-rewired": "^2.1.6"
-  }
+  },
+  "proxy": "https://api.us-south.text-to-speech.watson.cloud.ibm.com/v1"
 }

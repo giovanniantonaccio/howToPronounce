@@ -1,11 +1,17 @@
 import React from 'react';
 
-import Landing from 'pages/Landing';
+import CssBaseline from '@material-ui/core/CssBaseline';
+import Container from '@material-ui/core/Container';
 
-import 'styles/global.css';
+import LandingWatson from 'pages/LandingWatson';
 
 const App: React.FC = () => {
-  return <Landing />;
+  return (
+    <Container>
+      <CssBaseline />
+      <LandingWatson />
+    </Container>
+  );
 };
 
 export default App;
